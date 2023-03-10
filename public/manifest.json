@@ -1,0 +1,11 @@
+{
+  "name": "Get That API",
+  "description": "Test API",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["activeTab"],
+  "host_permissions": ["<all_urls>"]
+}
