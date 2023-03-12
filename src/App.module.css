@@ -54,6 +54,7 @@
   font-weight: 800;
   transition: ease-in-out 0.2s;
   font-family: "Nunito", sans-serif !important;
+  border: 2px solid #000;
 }
 
 .api__input__field:focus,
