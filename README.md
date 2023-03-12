@@ -11,6 +11,14 @@
 
 1. Install [NodeJS](https://nodejs.org/en/), I recommend using the LTS version.
 2. Download the repo using `git clone https://github.com/AshutoshDash1999/get-that-api-chrome-extension.git`
-3. Go to the directory and use `npm i`
+3. Go to the directory and run `npm i` in terminal.
+
+### 1. Using as Web App
+
+4. After that run `npm run dev` in terminal.
+5. Now open `http://localhost:5173/` in your browser.
+
+### 2. Using as Extension in Chrome
+
 4. After dependency installation, use `npm run build`. This will create a `dist` folder.
 5. Now load this file in your browser extension settings. 

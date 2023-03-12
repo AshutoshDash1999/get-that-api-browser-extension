@@ -14,5 +14,11 @@
     "32": "logo.png",
     "48": "logo.png",
     "128": "logo.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "getthatapi@firefox.com",
+      "strict_min_version": "42.0"
+    }
   }
 }
