@@ -97,7 +97,7 @@ function App() {
       requestMethod === "PATCH" ? (
         <div className={styles.payload__input__wrapper}>
           <textarea
-            placeholder={` Please keep the format as follows(avoid last comma, key value in string):
+            placeholder={` Please keep the format as follows(avoid trailing comma, key value in string):
             {
               "title": "foo",
              "body": "bar",
