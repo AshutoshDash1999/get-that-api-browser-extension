@@ -10,6 +10,10 @@
   min-height: 150px;
   width: 350px;
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 10px;
 }
 
 .api__request__form__wrapper {
@@ -68,13 +72,13 @@
   transform: scale(0.9);
 }
 
-.payload__input__wrapper{
+.payload__input__wrapper {
   margin-top: 14px;
   display: flex;
   justify-content: center;
 }
 
-.api__loading__text{
+.api__loading__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,6 +86,26 @@
   padding: 10px;
 }
 
-.response__view{
+.response__view {
   font-size: 12px;
+}
+
+.get__custom__auth {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.full__width__input {
+  width: 90%;
+}
+
+.bearer__token__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.get__auth__dropdown {
+  display: flex;
+  justify-content: center;
 }
