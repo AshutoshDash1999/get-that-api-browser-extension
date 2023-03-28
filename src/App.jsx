@@ -33,16 +33,22 @@ function App() {
           setJsonData(await GET(queryUrl, getAuthMethod, authValue));
           break;
         case "POST":
-          setJsonData(await POST(queryUrl, payloadData));
+          setJsonData(
+            await POST(queryUrl, payloadData, getAuthMethod, authValue)
+          );
           break;
         case "PUT":
-          setJsonData(await PUT(queryUrl, payloadData));
+          setJsonData(
+            await PUT(queryUrl, payloadData, getAuthMethod, authValue)
+          );
           break;
         case "PATCH":
-          setJsonData(await PATCH(queryUrl, payloadData));
+          setJsonData(
+            await PATCH(queryUrl, payloadData, getAuthMethod, authValue)
+          );
           break;
         case "DELETE":
-          setJsonData(await DELETE(queryUrl));
+          setJsonData(await DELETE(queryUrl, getAuthMethod, authValue));
           break;
         default:
           break;
@@ -89,22 +95,20 @@ function App() {
           </button>
         </div>
 
-        {requestMethod === "GET" ? (
-          <div className={styles.get__auth__dropdown}>
-            <select
-              name=""
-              id=""
-              onChange={(event) => setGetAuthMethod(event.target.value)}
-              className={styles.api__methods__dropdown}
-            >
-              <option value="noAuth">No Auth</option>
-              <option value="bearerToken">Bearer Token</option>
-              <option value="basicAuth">Basic Authentication</option>
-              <option value="digestAuth">Digest Authentication</option>
-              <option value="customAuth">Custom Authorization</option>
-            </select>
-          </div>
-        ) : null}
+        <div className={styles.get__auth__dropdown}>
+          <select
+            name=""
+            id=""
+            onChange={(event) => setGetAuthMethod(event.target.value)}
+            className={styles.api__methods__dropdown}
+          >
+            <option value="noAuth">No Auth</option>
+            <option value="bearerToken">Bearer Token</option>
+            <option value="basicAuth">Basic Authentication</option>
+            <option value="digestAuth">Digest Authentication</option>
+            <option value="customAuth">Custom Authorization</option>
+          </select>
+        </div>
 
         <div className={styles.bearer__token__wrapper}>
           {getAuthMethod === "bearerToken" ? (
@@ -180,10 +184,12 @@ function App() {
           <div className={styles.api__loading__text}>Loading...</div>
         ) : (
           <>
-            <div>{errorMessage}</div>
-            <pre className={styles.response__view}>
-              {JSON.stringify(jsonData, null, 2)}
-            </pre>
+            <div className={styles.response__view__wrapper}>
+              <div>{errorMessage}</div>
+              <code className={styles.response__view}>
+                <pre>{JSON.stringify(jsonData, null, 2)}</pre>
+              </code>
+            </div>
           </>
         )}
       </div>
