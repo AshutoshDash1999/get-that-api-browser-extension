@@ -1,6 +1,6 @@
 {
   "name": "Get That API",
-  "description": "Test API",
+  "description": "Get That API is an browser extension made to test API endpoints right in the browser",
   "version": "2.0.0",
   "manifest_version": 3,
   "action": {
