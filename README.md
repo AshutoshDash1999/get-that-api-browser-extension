@@ -22,3 +22,9 @@
 
 4. After dependency installation, use `npm run build`. This will create a `dist` folder.
 5. Now load this file in your browser extension settings. 
+
+### Live Link
+
+[Google Chrome Webstore Link](https://chrome.google.com/webstore/detail/get-that-api/dogjkacjoihbjjhmdnpoidblknfaocao)
+
+[Firefox Adds On Link](https://addons.mozilla.org/en-US/firefox/addon/get-that-api/)
