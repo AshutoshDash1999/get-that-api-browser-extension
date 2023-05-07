@@ -7,6 +7,19 @@
 
 <p align="center">Get That API is an open source browser extension made to test API endpoints right in the browser</p>
 
+Get That API allows you to easily and quickly make API calls directly from your browser.
+
+With Get That API, you can access a wide range of APIs, including weather, news, financial data, and more, all in one place. Our user-friendly interface makes it easy to search, browse, and select the API you need, and our open-source library ensures secure and reliable connections.
+
+Whether you're a developer building a new app, a business owner looking for insights to make informed decisions, or anyone who needs to access API data quickly and easily, Get That API is the tool for you.
+
+Get That API is free to use and does not collect any personal data or use cookies, ensuring your privacy is protected. Plus, with regular updates and new API additions, you can be sure that you're always accessing the latest and greatest data.
+
+Features:
+✨ Supported HTTP Methods: GET, PUT, POST, PATCH & DELETE.
+✨ Add Authorization
+✨ Add Payload
+
 ## Installation
 
 1. Install [NodeJS](https://nodejs.org/en/), I recommend using the LTS version.
