@@ -1,11 +1,12 @@
-<p align="center">
-<img width="250" alt="Logo" src="https://github.com/AshutoshDash1999/get-that-api-chrome-extension/blob/master/public/logo.png"/>
-</p>
+
+<div align="center">
+    <img src="https://github.com/AshutoshDash1999/get-that-api-browser-extension/assets/46455250/e1f94ebf-9011-41fd-a4a6-5a14d55dfe1c">
+</div>
 
 <h1 align="center">Get That API</h1>
 <br/>
 
-<p align="center">Get That API is an open source browser extension made to test API endpoints right in the browser</p>
+<p align="center">Get That API is an open-source browser extension made to test API endpoints right in the browser</p>
 
 Get That API allows you to easily and quickly make API calls directly from your browser.
 
